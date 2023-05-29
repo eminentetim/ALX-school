@@ -2,16 +2,20 @@
 
 /* program to output a system information page */
 
+	title="System Information Report"
+
+
 echo "<HTML>
      <HEAD>
 
-     <TITLE>Page Title </TITLE>
+     <TITLE>$title</TITLE>
 
 
      </HEAD>
 
      <BODY>
     
+	<h1>$title</h1>
      </BODY>
-     </HTML>"
+ </HTML>"
 
