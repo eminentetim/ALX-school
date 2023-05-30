@@ -6,6 +6,16 @@
 	CURRENT_TIME=$(date +"%x %r %z")
 	TIME-STAMP="Generated $CURRENT_TIME, by $USER"
 
+	report_uptime () {
+	return
+}
+	report_disk_space () {
+	return
+}
+	report_home_space () {
+	return
+}
+
 	cat << _EOF_
 
 echo "<HTML>
@@ -20,6 +30,9 @@ echo "<HTML>
     
 	<h1>$TITLE</h1>
 	<P> $TIME_STAMP</p>
+	$(report_uptime)
+	$(report_disk_space)
+	$(report_home_space)
      </BODY>
  </HTML>"
 _EOF_
